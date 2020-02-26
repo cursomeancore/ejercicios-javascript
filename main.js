@@ -1,13 +1,33 @@
 /*
-Ejercicio 2: escribe un programa con cuatro variables de tipo number (a, b, c y d) y un condicional que imprima por pantalla si la suma de a y b es mayor que la suma de c y d.
+function sumar(a, b) {
+  return a + b;
+}
 */
 
-const a = 1;
-const b = 6;
-const c = 2;
-const d = 2;
+() => {}
+const restar = a => a - 2;
 
-if (a + b > c + d) {
-  console.log('Es mayor');
-  
-}
+
+const resultado = restar(2);
+console.log(resultado);
+
+
+
+
+
+
+
+
+
+// function prueba(callback) {
+//   console.log(callback(2,3));
+// }
+
+
+// prueba(function(a, b) {
+//   return a + b;
+// });
+
+
+// const resultado = sumar(2, 3);
+// console.log(resultado);
