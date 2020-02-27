@@ -1,4 +1,4 @@
 git add .
-git commit -m "Agregado todos los ejercicios hasta el 4.4"
+git commit -m "Agregado el ejercicio 4.5"
 git push -u origin master
 pause
