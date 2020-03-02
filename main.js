@@ -1,33 +1,29 @@
-/*
-function sumar(a, b) {
-  return a + b;
-}
-*/
+const frutas = {
+  manzanas: 4,
+  peras: 3
+};
 
-() => {}
-const restar = a => a - 2;
+// console.log(frutas);
+// console.log(frutas.manzanas);
+// console.log(frutas['manzanas']);
 
-
-const resultado = restar(2);
-console.log(resultado);
-
+const frutas2 = {};
+frutas2.fresas = 4;
 
 
+frutas2.mostrarFresas = (fresas) => {
+  console.log(fresas);
+};
+// console.log(frutas2.fresas);
+delete frutas2.fresas;
 
-
-
-
-
-
-// function prueba(callback) {
-//   console.log(callback(2,3));
+// for(const fruta in frutas) {
+//   console.log(fruta);
 // }
 
+// propiedades es un array
+const propiedades = Object.keys(frutas);
 
-// prueba(function(a, b) {
-//   return a + b;
-// });
-
-
-// const resultado = sumar(2, 3);
-// console.log(resultado);
+for(const propiedad of propiedades) {
+  console.log(`La propiedad ${propiedad} tiene el valor ${frutas[propiedad]}`);
+}
