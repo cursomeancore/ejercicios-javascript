@@ -1,29 +1,11 @@
-const frutas = {
-  manzanas: 4,
-  peras: 3
-};
+const frutas = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'];
 
-// console.log(frutas);
-// console.log(frutas.manzanas);
-// console.log(frutas['manzanas']);
+const frutas1 = frutas.slice(1,3);
 
-const frutas2 = {};
-frutas2.fresas = 4;
+// ["Orange"]
+console.log(frutas1);
 
+const frutas2 = frutas.slice(1);
 
-frutas2.mostrarFresas = (fresas) => {
-  console.log(fresas);
-};
-// console.log(frutas2.fresas);
-delete frutas2.fresas;
-
-// for(const fruta in frutas) {
-//   console.log(fruta);
-// }
-
-// propiedades es un array
-const propiedades = Object.keys(frutas);
-
-for(const propiedad of propiedades) {
-  console.log(`La propiedad ${propiedad} tiene el valor ${frutas[propiedad]}`);
-}
+// ["Orange", "Lemon", "Apple", "Mango"]
+console.log(frutas2);
